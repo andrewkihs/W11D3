@@ -10,6 +10,7 @@ const pokemonReducer = (state = {}, action) => {
     case RECEIVE_ALL_POKEMON:
       return Object.assign({}, action.pokemon, state);
     case RECEIVE_SINGLE_POKEMON:
+      // debugger
       const newPokemon = { [action.pokemon.id]: action.pokemon };
       return merge({}, state, newPokemon);
     default:
