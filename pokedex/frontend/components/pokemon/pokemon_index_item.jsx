@@ -8,7 +8,6 @@ class PokemonIndexItem extends React.Component{
   }
 
   render() {
-    // debugger
     const pokemon = this.props.pokemon;
     
     return (
